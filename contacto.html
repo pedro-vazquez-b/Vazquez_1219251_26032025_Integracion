@@ -68,19 +68,27 @@
 
         .contenedor {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
             gap: 2rem;
             margin: 2rem;
         }
 
         .formulario,
         .info {
-            flex: 1;
             min-width: 300px;
             background-color: white;
             padding: 1.5rem;
             border-radius: 8px;
             border: 1px solid black;
+            margin: 1rem;
+        }
+
+        .formulario {
+            flex: 1;
+        }
+
+        .info {
+            flex: 1;
         }
 
         .item-formulario {
@@ -96,7 +104,7 @@
         .item-formulario input,
         .item-formulario select,
         .item-formulario textarea {
-            width: 100%;
+            width: 90%;
             padding: 0.5rem;
             border: 1px solid grey;
             border-radius: 4px;
